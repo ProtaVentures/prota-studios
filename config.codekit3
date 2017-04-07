@@ -77,6 +77,12 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/zohoverify\/verifyforzoho.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/zohoverify\/verifyforzoho.html",
+		"oF": 0
 		}
 	},
 "hooks": [
