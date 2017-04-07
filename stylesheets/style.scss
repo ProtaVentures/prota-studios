@@ -1,0 +1,103 @@
+@import "bourbon", "neat";
+
+// COLORS
+$white: whitesmoke;
+$black: #161616;
+$gray: #7d7d7d;
+$gray-light: lighten($gray, 15%);
+$gray-lighter: lighten($gray, 35%);
+$gray-dark: mix($gray, $black, 75%);
+$gray-darker: mix($gray, $black, 25%);
+$color-primary: $gray;
+
+body {
+  font-family: "proxima-nova", sans-serif;
+  font-size: 17px;
+  line-height: 1.4;
+  min-height: calc(100vh - 50px);
+  color: $white;
+  background: $gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 25px;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(ellipse at center, $gray-dark 0%, $black 100%);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 27px;
+  margin-bottom: 0;
+}
+
+p {
+  font-weight: 300;
+}
+
+a,
+a:visited {
+  font-weight: 700;
+  color: $color-primary;
+  text-decoration: none;
+  border-bottom: 1px solid $black;
+
+  &:hover,
+  &:active {
+    color: lighten($color-primary, 15%);
+    border-bottom: 1px solid lighten($color-primary, 20%);
+  }
+}
+
+strong {
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  margin: auto;
+  height: calc(100vh - 100px);
+}
+
+.logo {
+
+  svg {
+    max-width: 300px;
+    width: 100%;
+
+    #Icon {
+      fill: $white;
+    }
+
+    #Prota {
+      fill: $white;
+    }
+
+    #Studios {
+      fill: $white;
+    }
+  }
+
+  span {
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+}
+
+footer {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: 50px;
+  margin: 0;
+  font-size: 13px;
+  text-align: center;
+  opacity: 0.65;
+}

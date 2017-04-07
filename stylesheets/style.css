@@ -1,0 +1,72 @@
+body {
+  font-family: "proxima-nova", sans-serif;
+  font-size: 17px;
+  line-height: 1.4;
+  min-height: calc(100vh - 50px);
+  color: whitesmoke;
+  background: #7d7d7d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 25px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(ellipse at center, #636363 0%, #161616 100%); }
+
+h1 {
+  font-weight: 700;
+  font-size: 27px;
+  margin-bottom: 0; }
+
+p {
+  font-weight: 300; }
+
+a,
+a:visited {
+  font-weight: 700;
+  color: #7d7d7d;
+  text-decoration: none;
+  border-bottom: 1px solid #161616; }
+  a:hover, a:active,
+  a:visited:hover,
+  a:visited:active {
+    color: #a3a3a3;
+    border-bottom: 1px solid #b0b0b0; }
+
+strong {
+  font-weight: 700; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  margin: auto;
+  height: calc(100vh - 100px); }
+
+.logo svg {
+  max-width: 300px;
+  width: 100%; }
+  .logo svg #Icon {
+    fill: whitesmoke; }
+  .logo svg #Prota {
+    fill: whitesmoke; }
+  .logo svg #Studios {
+    fill: whitesmoke; }
+
+.logo span {
+  display: block;
+  width: 1px;
+  height: 1px;
+  overflow: hidden; }
+
+footer {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: 50px;
+  margin: 0;
+  font-size: 13px;
+  text-align: center;
+  opacity: 0.65; }
