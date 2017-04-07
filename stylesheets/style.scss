@@ -34,10 +34,12 @@ h1 {
 }
 
 p {
+  width: 500px;
   font-weight: 300;
 
   &.intro {
-    font-size: 21px;
+    width: auto;
+    font-size: 25px;
     font-weight: 600;
   }
 }
@@ -106,4 +108,9 @@ footer {
   font-size: 13px;
   text-align: center;
   opacity: 0.65;
+
+  p {
+    text-align: center;
+    margin: 15px auto;
+  }
 }
