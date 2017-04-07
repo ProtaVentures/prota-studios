@@ -35,19 +35,24 @@ h1 {
 
 p {
   font-weight: 300;
+
+  &.intro {
+    font-size: 21px;
+    font-weight: 600;
+  }
 }
 
 a,
 a:visited {
   font-weight: 700;
-  color: $color-primary;
+  color: $gray-lighter;
   text-decoration: none;
-  border-bottom: 1px solid $black;
+  border-bottom: 1px solid $gray-lighter;
 
   &:hover,
   &:active {
-    color: lighten($color-primary, 15%);
-    border-bottom: 1px solid lighten($color-primary, 20%);
+    color: #fff;
+    border-bottom: 1px solid #fff;
   }
 }
 
@@ -60,7 +65,7 @@ strong {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 700px;
+  max-width: 500px;
   margin: auto;
   height: calc(100vh - 100px);
 }
