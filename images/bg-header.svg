@@ -1,0 +1,22 @@
+<svg width="1440px" height="602px" viewBox="0 0 1440 602" xmlns="http://www.w3.org/2000/svg">
+    <title>Header BG</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#BDBDBD" offset="0%"></stop>
+            <stop stop-color="#686868" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#BDBDBD" offset="0%"></stop>
+            <stop stop-color="#4E4E4E" offset="99.3642379%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD">
+            <g id="Header-BG">
+                <path d="M9.29986166e-14,602 C428,238 1049,545 1440,109 C1440,84 1440,0 1440,0 L8.52651283e-14,0 C8.52651283e-14,0 -1.11637562e-13,425 9.29986166e-14,602 Z" id="Path-2" fill="url(#linearGradient-1)"></path>
+                <path d="M8.37986761e-14,518 C383,256 1084,602 1440,116 C1440,91 1440,0 1440,0 L1.13686838e-13,0 C1.13686838e-13,0 -1.20837503e-13,341 8.37986761e-14,518 Z" id="Path-2" fill="url(#linearGradient-2)" style="mix-blend-mode: multiply;"></path>
+            </g>
+        </g>
+    </g>
+</svg>

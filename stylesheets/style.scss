@@ -15,16 +15,14 @@ body {
   font-size: 17px;
   line-height: 1.4;
   min-height: calc(100vh - 50px);
-  color: $white;
-  background: $gray;
+  color: $black;
+  background: $white;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0;
-  padding: 25px;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-  background: radial-gradient(ellipse at center, $gray-dark 0%, $black 100%);
 }
 
 h1 {
@@ -35,7 +33,6 @@ h1 {
 
 p {
   width: 100%;
-  max-width: 500px;
   font-weight: 300;
   text-align: center;
   color: $gray-lighter;
@@ -65,20 +62,44 @@ strong {
   font-weight: 700;
 }
 
-.container {
+.site-header-inner {
+  box-sizing: border-box;
+  width: 100%;
+  height: 27vw;
+  min-height: 324px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 500px;
   margin: auto;
-  height: calc(100vh - 100px);
+  padding: 25px;
+}
+
+.site-header-background {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+
+  img {
+    position: absolute;
+    width: 100%;
+    min-width: 1200px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
 }
 
 .logo {
+  width: 33vw;
+  min-width: 280px;
+  max-width: 580px;
 
   svg {
-    max-width: 300px;
+    // max-width: 300px;
     width: 100%;
 
     #Icon {
