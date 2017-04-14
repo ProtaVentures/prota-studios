@@ -6,10 +6,10 @@
 
   <title>Prota Studios</title>
 
-  <script src="https://use.typekit.net/yde2ddx.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script type="text/javascript" src="//fast.fonts.net/jsapi/9b03caba-f4bd-45ce-8703-9f04f862f577.js"></script>
 
   <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/jquery-ui.css">
 
   <script>
     function gen_mail_to_link(lhs,rhs,subject,text) {
@@ -30,6 +30,30 @@
   </script>
 </head>
 <body>
+  <div id="block">
+    <script>
+    function passWord() {
+      var testV = 1;
+      var pass1 = prompt('Please Enter Your Password',' ');
+      while (testV < 3) {
+      if (!pass1)
+      history.go(-1);
+      if (pass1.toLowerCase() == "letmein") {
+      alert('You Got it Right!');
+      $('#block').hide();
+      break;
+      }
+      testV+=1;
+      var pass1 =
+      prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+      }
+      if (pass1.toLowerCase()!="password" & testV ==3)
+      history.go(-1);
+      return " ";
+    }
+    </script>
+    <input type="button" value="Enter Protected Area" onClick="passWord()" />
+  </div>
   <header class="site-header">
 
     <div class="site-header-inner">
@@ -50,10 +74,56 @@
     <div class="site-header-background"><img src="images/bg-header.svg" alt=""></div>
   </header>
 
+  <div class="site-container">
 
+    <section>
+      <h2>Want to Work With Us?</h2>
+      <p>
+        Tell us a bit about yourself and your project.<br />
+        We’ll get back to you and set up a time to talk.
+      </p>
+    </section>
+
+    <section>
+      <h3>I’d Like the Qulity Level to Be:</h3>
+      <div class="slider-wrapper">
+        <span class="label1">Junior</span>
+        <div class="slider" id="slider1"></div>
+        <span class="label2">World Class</span>
+      </div>
+    </section>
+
+    <section>
+      <h3>I’d Like to Pay With:</h3>
+      <div class="slider-wrapper">
+        <span class="label1">Cash</span>
+        <div class="slider" id="slider2"></div>
+        <span class="label2">Equity</span>
+      </div>
+    </section>
+
+    <section>
+      <h3>Please Contact Me At:</h3>
+      <p><input type="text"></p>
+    </section>
+
+    <section>
+      <h3>I’d Also Like You To Know:</h3>
+      <p><textarea name="" id="" cols="30" rows="7"></textarea></p>
+    </section>
+
+    <section>
+      <p><button>Submit</button></p>
+    </section>
+
+  </div>
 
   <footer>
     <p>&copy; 2017 Prota Studios. A <a href="https://www.protaventures.com">Prota Ventures</a> company.</p>
   </footer>
+
+  <script src="scripts/jquery-3.2.1.min.js"></script>
+  <script src="scripts/jquery-ui.min.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>

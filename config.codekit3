@@ -65,6 +65,43 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/scripts\/jquery-3.2.1.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/scripts\/jquery-3.2.1.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/scripts\/jquery-ui.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/scripts\/jquery-ui.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/scripts\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/scripts\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/stylesheets\/jquery-ui.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/stylesheets\/jquery-ui-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/stylesheets\/style.css": {
 		"aP": 0,
 		"bl": 0,

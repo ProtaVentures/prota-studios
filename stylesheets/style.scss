@@ -1,5 +1,19 @@
 @import "bourbon", "neat";
 
+// FONTS
+$font-regular: 'Proxima N W01 Reg', Helvetica, sans-serif;
+$font-semibold: 'Proxima N W01 Smbd', Helvetica, sans-serif;
+$font-bold: 'Proxima N W01 Bold', Helvetica, sans-serif;
+// font-family:'Proxima N W01 Smbd';
+// font-family:'Proxima N W01 Smbd It';
+$font-light:'Proxima N W01 Light', Helvetica, sans-serif;
+// font-family:'Proxima N W01 Bold';
+// font-family:'Proxima N W01 Light It';
+// font-family:'Proxima N W01 Bold It';
+// font-family:'Proxima N W01 Reg It';
+// font-family:'Proxima N W01 Reg';
+
+
 // COLORS
 $white: whitesmoke;
 $black: #161616;
@@ -10,8 +24,61 @@ $gray-dark: mix($gray, $black, 75%);
 $gray-darker: mix($gray, $black, 25%);
 $color-primary: $gray;
 
+$action-color: dodgerblue;
+
+// VARIABLES
+$base-border-radius: 50%;
+$base-font-family: "proxima-nova", sans-serif;
+$base-font-size: 19px;
+
+$small-spacing: 10px;
+$base-spacing: 24px;
+$base-duration: 100ms;
+$base-timing: ease-in;
+
+// BUTTONS
+#{$all-buttons} {
+  appearance: none;
+  background-color: $action-color;
+  border: 0;
+  border-radius: $base-border-radius;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $font-regular;
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+  padding: #{$small-spacing * 1.5} $base-spacing;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color $base-duration $base-timing, transform $base-duration $base-timing, box-shadow $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: tint($action-color, 10%);
+    color: #fff;
+    transform: translateY(-10%);
+    box-shadow: 0 4px 10px rgba($black, 0.25);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+
+    &:hover {
+      background-color: $action-color;
+    }
+  }
+}
+
 body {
-  font-family: "proxima-nova", sans-serif;
+  font-family: $font-regular;
   font-size: 17px;
   line-height: 1.4;
   min-height: calc(100vh - 50px);
@@ -21,45 +88,75 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0;
-  -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+
+  box-sizing: border-box;
+
+  * {
+    box-sizing: inherit;
+  }
 }
 
 h1 {
-  font-weight: 700;
+  font-family: $font-bold;
   font-size: 27px;
   margin-bottom: 0;
 }
 
+h2 {
+  color: $gray-darker;
+  font-size: 25px;
+  font-family: $font-semibold;
+  text-align: center;
+}
+
+h3 {
+  color: $gray-darker;
+  font-size: 19px;
+  font-family: $font-semibold;
+  text-align: center;
+}
+
 p {
   width: 100%;
-  font-weight: 300;
+  font-size: 19px;
   text-align: center;
-  color: $gray-lighter;
+  color: $gray-dark;
 
   &.intro {
     width: auto;
     font-size: 19px;
-    font-weight: 400;
   }
 }
 
 a,
 a:visited {
-  font-weight: 400;
-  color: $gray-lighter;
   text-decoration: none;
-  border-bottom: 1px solid $gray-light;
+  color: $gray-dark;
+  border-bottom: 1px solid $gray;
 
   &:hover,
   &:active {
-    color: #fff;
-    border-bottom: 1px solid $white;
+    color: $gray;
+    border-bottom: 1px solid $gray-light;
   }
 }
 
 strong {
-  font-weight: 700;
+  font-family: $font-bold;
+}
+
+.site-header {
+  a,
+  a:visited {
+    color: $white;
+    border-bottom: 1px solid $gray-light;
+
+    &:hover,
+    &:active {
+      color: #fff;
+      border-bottom: 1px solid $white;
+    }
+  }
 }
 
 .site-header-inner {
@@ -73,6 +170,12 @@ strong {
   align-items: center;
   margin: auto;
   padding: 25px;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+  p {
+    color: $white;
+  }
 }
 
 .site-header-background {
@@ -123,6 +226,16 @@ strong {
   }
 }
 
+.site-container {
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+  section {
+    margin: 90px auto;
+    max-width: 500px;
+  }
+}
+
 footer {
   display: block;
   width: 100%;
@@ -132,9 +245,125 @@ footer {
   font-size: 13px;
   text-align: center;
   opacity: 0.65;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 
   p {
+    font-size: 15px;
     text-align: center;
     margin: 15px auto;
   }
+}
+
+.slider-wrapper {
+  position: relative;
+
+  span {
+    display: block;
+    position: absolute;
+    top: -3px;
+    width: 200px;
+    color: $gray-light;
+
+    &.label1 {
+      left: -200px;
+      text-align: right;
+      padding-right: $base-spacing;
+    }
+
+    &.label2 {
+      right: -200px;
+      text-align: left;
+      padding-left: $base-spacing;
+    }
+  }
+
+  .slider {
+    // display: inline-block;
+  }
+}
+
+.tooltip {
+  position: absolute;
+  padding: #{$small-spacing / 2} $small-spacing;
+  background: $black;
+  color: $white;
+  font-size: 14px;
+  top: 44px;
+  left: 50%;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  cursor: default;
+  pointer-events: none;
+
+  &:before {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -10px;
+    content: '';
+    width: 0px;
+    height: 10px;
+    border-bottom: 10px solid $black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+}
+
+.slider-wrapper {
+  min-height: 60px;
+}
+
+.slider.ui-slider {
+  .ui-slider-handle {
+    top: -13px;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background-color: $action-color;
+    border: none;
+    box-shadow: 0 4px 10px rgba($black, 0.25);
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &.ui-widget.ui-widget-content {
+    top: 7px;
+    height: 4px;
+    background: $gray-light;
+    border: 0;
+  }
+}
+
+input {
+  font-size: 17px;
+  line-height: #{19 * 1.5}px;
+  width: 400px;
+  text-align:center;
+  color: $gray-darker;
+  border: 1px solid $gray-lighter;
+  padding: #{$small-spacing / 2} $small-spacing;
+}
+
+textarea {
+  font-size: 17px;
+  line-height: #{19 * 1.5}px;
+  width: 400px;
+  border: 1px solid $gray-lighter;
+  padding: #{$small-spacing / 2} $small-spacing;
+}
+
+// TEMP
+#block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: $black;
 }
