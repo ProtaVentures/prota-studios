@@ -33,7 +33,7 @@
   </script>
 </head>
 <body>
-  <div id="block">
+  <!-- <div id="block">
     <script>
     function passWord() {
 
@@ -59,7 +59,7 @@
     }
     </script>
     <input type="button" value="Enter Protected Area" onClick="passWord()" />
-  </div>
+  </div> -->
   <header class="site-header">
 
     <div class="site-header-inner">
@@ -110,29 +110,6 @@
       </div>
     </section>
 
-
-    <p>Services we provide:</p>
-
-    <ul>
-      <li>Web design & development</li>
-      <li>Mobile design & development</li>
-      <li>Graphic design</li>
-      <li>Logo creation</li>
-      <li>Illustration </li>
-      <li>Brand strategy</li>
-      <li>Video & animation</li>
-      <li>DevOps</li>
-      <li>Machine learning</li>
-      <li>Data science</li>
-      <li>AR/VR development</li>
-      <li>Inbound marketing & SEO</li>
-      <li>Social media marketing</li>
-      <li>Outbound marketing & ad strategy</li>
-      <li>Demand generation & automated marketing</li>
-      <li>Copywriting</li>
-      <li>...and more. </li>
-    </ul>
-
     <section>
       <h3>Please Contact Me At:</h3>
       <p><input type="text" placeholder="Email Address" id="email" /></p>
@@ -140,14 +117,21 @@
 
     <section>
       <h3>Here's more about my project:</h3>
-      <p><textarea name="" id="" cols="30" rows="7"></textarea></p>
+      <p><textarea name="" cols="30" rows="7" id="notes"></textarea></p>
     </section>
 
     <section>
       <p>
-        <input type="button" value="Submit" id="submitForm" />
+        <input type="button" value="Let's Do This" id="submitForm" />
       </p>
     </section>
+
+    <div class="remodal" data-remodal-id="submit-success">
+      <a data-remodal-action="close" class="remodal-close"></a>
+      <p>Thank you! We’ll be in touch soon.</p>
+      <br>
+      <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+    </div>
 
     <div class="remodal" data-remodal-id="submit-blank">
       <a data-remodal-action="close" class="remodal-close"></a>
@@ -156,11 +140,44 @@
       <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
     </div>
 
+    <!-- <section>
+      <p>Services we provide:</p>
+
+      <ul>
+        <li>Web design & development</li>
+        <li>Mobile design & development</li>
+        <li>Graphic design</li>
+        <li>Logo creation</li>
+        <li>Illustration </li>
+        <li>Brand strategy</li>
+        <li>Video & animation</li>
+        <li>DevOps</li>
+        <li>Machine learning</li>
+        <li>Data science</li>
+        <li>AR/VR development</li>
+        <li>Inbound marketing & SEO</li>
+        <li>Social media marketing</li>
+        <li>Outbound marketing & ad strategy</li>
+        <li>Demand generation & automated marketing</li>
+        <li>Copywriting</li>
+        <li>...and more. </li>
+      </ul>
+    </section> -->
+
   </div>
 
   <footer>
     <p>&copy; 2017 Prota Studios. A <a href="https://www.protaventures.com">Prota Ventures</a> company.</p>
   </footer>
+
+  <form style="display:none" id="gForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdjVjcahWNEobzFCq7Jv87opel2C4PdThlqZAN2TTy9b4br2w/formResponse?embedded=true" target="hidden_form" method="POST">
+    <input type="text" name="entry.1583652139" id="f-quality" />
+    <input type="text" name="entry.218322902" id="f-pay" />
+    <input type="text" name="entry.97589844" id="f-email" />
+    <textarea name="entry.1875712998" id="f-notes"></textarea>
+    <button>Submit</button>
+  </form>
+  <iframe name="hidden_form" hidden></iframe>
 
   <script src="scripts/jquery-3.2.1.min.js"></script>
   <script src="scripts/jquery-ui.min.js"></script>

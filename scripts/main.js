@@ -7,11 +7,7 @@ $(function() {
   }
 
   // Tooltips
-  var tooltip1 = $('<div id="tooltip1" class="tooltip" />').css({
-    position: 'absolute',
-  }).show();
-
-  var tooltip2 = $('<div id="tooltip2" class="tooltip" />').css({
+  var tooltip = $('<div id="tooltip" class="tooltip" />').css({
     position: 'absolute',
   }).show();
 
@@ -21,9 +17,7 @@ $(function() {
     min: 0,
     max: 100,
     step: 1,
-    slide: function(event, ui ) {
-      //tooltip1.text(ui.value);
-    },
+    slide: function(event, ui ) {},
     change: function(event, ui) {}
   });
 
@@ -38,16 +32,13 @@ $(function() {
       var num2 = ui.value > 0 ? ui.value + "%" : '';
       var divider = ui.value < 100 && ui.value > 0 ? ' / ' : '';
 
-      tooltip2.text(num1 + divider + num2 );
+      tooltip.text(num1 + divider + num2 );
     },
     change: function(event, ui) {}
   });
 
-  $('#slider1 .ui-slider-handle').append(tooltip1);
-  //$('#tooltip1').text('50%');
-  $('#tooltip1').hide();
-  $('#slider2 .ui-slider-handle').append(tooltip2);
-  $('#tooltip2').text('50% / 50%');
+  $('#slider2 .ui-slider-handle').append(tooltip);
+  $('#tooltip').text('50% / 50%');
 
 
   // FORM
@@ -60,5 +51,24 @@ $(function() {
       $('[data-remodal-id="submit-blank"]').remodal().open();
     }
   });
+
+  function submitForm() {
+    var slider1Val = $('#slider1').slider( 'value' );
+    var slider2Val = $('#slider2').slider( 'value' );
+    var emailVal = $('#email').val();
+    var notesVal = $('#notes').val();
+
+    var slider1Text = slider1Val + '%';
+    var slider2Text = (100 - slider2Val) + '% Cash / ' + slider2Val + '% Equity';
+
+    $('#f-quality').val( slider1Text );
+    $('#f-pay').val( slider2Text );
+    $('#f-email').val( emailVal );
+    $('#f-notes').val( notesVal );
+    $('#gForm').submit();
+
+    $('[data-remodal-id="submit-success"]').remodal().open();
+    $('#submitForm').hide();
+  }
 
 });

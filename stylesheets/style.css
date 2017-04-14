@@ -6,11 +6,11 @@ button, [type='button'], [type='reset'], [type='submit'] {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: "Proxima N W01 Reg", Helvetica, sans-serif;
+  font-family: "Proxima N W01 Smbd", Helvetica, sans-serif;
   font-size: 19px;
   -webkit-font-smoothing: antialiased;
   line-height: 1;
-  padding: 15px 24px;
+  padding: 20px 24px;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   text-decoration: none;
@@ -18,17 +18,21 @@ button, [type='button'], [type='reset'], [type='submit'] {
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(22, 22, 22, 0.3); }
   button:hover, button:focus, [type='button']:hover, [type='button']:focus, [type='reset']:hover, [type='reset']:focus, [type='submit']:hover, [type='submit']:focus {
     background-color: #359bff;
     color: #fff;
     transform: translateY(-10%);
-    box-shadow: 0 4px 10px rgba(22, 22, 22, 0.25); }
+    box-shadow: 0 8px 14px rgba(22, 22, 22, 0.15); }
   button:disabled, [type='button']:disabled, [type='reset']:disabled, [type='submit']:disabled {
     cursor: not-allowed;
     opacity: 0.3; }
     button:disabled:hover, [type='button']:disabled:hover, [type='reset']:disabled:hover, [type='submit']:disabled:hover {
       background-color: dodgerblue; }
+  button:focus, [type='button']:focus, [type='reset']:focus, [type='submit']:focus {
+    outline: none;
+    box-shadow: 0 0 0px 1px rgba(245, 245, 245, 0.35), 0 0 6px 3px rgba(30, 144, 255, 0.65), 0 8px 14px rgba(22, 22, 22, 0.25); }
 
 body {
   font-family: "Proxima N W01 Reg", Helvetica, sans-serif;
@@ -234,7 +238,7 @@ footer {
   background: #a3a3a3;
   border: 0; }
 
-input {
+input[type='text'] {
   font-size: 17px;
   line-height: 28.5px;
   width: 400px;
@@ -242,13 +246,13 @@ input {
   color: #303030;
   border: 1px solid #d6d6d6;
   padding: 5px 10px; }
-  input::-webkit-input-placeholder {
+  input[type='text']::-webkit-input-placeholder {
     color: #a3a3a3; }
-  input::-moz-placeholder {
+  input[type='text']::-moz-placeholder {
     color: #a3a3a3; }
-  input:-ms-input-placeholder {
+  input[type='text']:-ms-input-placeholder {
     color: #a3a3a3; }
-  input:-moz-placeholder {
+  input[type='text']:-moz-placeholder {
     color: #a3a3a3; }
 
 textarea {

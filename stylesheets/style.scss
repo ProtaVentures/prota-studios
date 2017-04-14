@@ -45,11 +45,11 @@ $base-timing: ease-in;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: $font-regular;
+  font-family: $font-semibold;
   font-size: $base-font-size;
   -webkit-font-smoothing: antialiased;
   line-height: 1;
-  padding: #{$small-spacing * 1.5} $base-spacing;
+  padding: #{$small-spacing * 2} $base-spacing;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   text-decoration: none;
@@ -58,13 +58,14 @@ $base-timing: ease-in;
   vertical-align: middle;
   white-space: nowrap;
   text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba($black, 0.3);
 
   &:hover,
   &:focus {
     background-color: tint($action-color, 10%);
     color: #fff;
     transform: translateY(-10%);
-    box-shadow: 0 4px 10px rgba($black, 0.25);
+    box-shadow: 0 8px 14px rgba($black, 0.15);
   }
 
   &:disabled {
@@ -74,6 +75,13 @@ $base-timing: ease-in;
     &:hover {
       background-color: $action-color;
     }
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0px 1px rgba($white, 0.35),
+                0 0 6px 3px rgba($action-color, 0.65),
+                0 8px 14px rgba($black, 0.25);
   }
 }
 
@@ -344,7 +352,7 @@ footer {
   }
 }
 
-input {
+input[type='text'] {
   font-size: 17px;
   line-height: #{19 * 1.5}px;
   width: 400px;
