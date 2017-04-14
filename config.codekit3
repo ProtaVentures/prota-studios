@@ -113,11 +113,27 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/index.html",
-		"oF": 0
+	"\/images\/og-facebook.png": {
+		"ft": 32768,
+		"iS": 12378,
+		"oA": 0,
+		"oAP": "\/images\/og-facebook.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/og-twitter.png": {
+		"ft": 32768,
+		"iS": 12862,
+		"oA": 0,
+		"oAP": "\/images\/og-twitter.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/manifest.json": {
 		"ft": 524288,
