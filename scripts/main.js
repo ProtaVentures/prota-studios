@@ -26,7 +26,7 @@ $(function() {
     value: 50,
     min: 0,
     max: 100,
-    step: 25,
+    step: 5,
     slide: function(event, ui ) {
       var num1 = ui.value < 100 ? (100 - ui.value) + "%" : '';
       var num2 = ui.value > 0 ? ui.value + "%" : '';
