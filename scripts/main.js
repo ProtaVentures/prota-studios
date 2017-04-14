@@ -69,6 +69,10 @@ $(function() {
 
     $('[data-remodal-id="submit-success"]').remodal().open();
     $('#submitForm').hide();
+
+    var emailVal = $('#email').val("");
+    var notesVal = $('#notes').val("");
+
   }
 
 });
