@@ -83,6 +83,15 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/scripts\/jquery.ui.touch-punch.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/scripts\/jquery.ui.touch-punch.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/scripts\/main-min.js": {
 		"ft": 64,
 		"mi": 1,
