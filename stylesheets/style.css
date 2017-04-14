@@ -18,7 +18,8 @@ button, [type='button'], [type='reset'], [type='submit'] {
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(22, 22, 22, 0.15); }
   button:hover, button:focus, [type='button']:hover, [type='button']:focus, [type='reset']:hover, [type='reset']:focus, [type='submit']:hover, [type='submit']:focus {
     background-color: #359bff;
     color: #fff;
