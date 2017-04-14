@@ -74,13 +74,18 @@ p {
 a,
 a:visited {
   text-decoration: none;
-  color: #636363;
-  border-bottom: 1px solid #7d7d7d; }
+  color: #636363; }
+  a[href],
+  a:visited[href] {
+    border-bottom: 1px solid #7d7d7d; }
   a:hover, a:active,
   a:visited:hover,
   a:visited:active {
-    color: #7d7d7d;
-    border-bottom: 1px solid #a3a3a3; }
+    color: #7d7d7d; }
+    a:hover[href], a:active[href],
+    a:visited:hover[href],
+    a:visited:active[href] {
+      border-bottom: 1px solid #a3a3a3; }
 
 strong {
   font-family: "Proxima N W01 Bold", Helvetica, sans-serif; }
@@ -237,6 +242,14 @@ input {
   color: #303030;
   border: 1px solid #d6d6d6;
   padding: 5px 10px; }
+  input::-webkit-input-placeholder {
+    color: #a3a3a3; }
+  input::-moz-placeholder {
+    color: #a3a3a3; }
+  input:-ms-input-placeholder {
+    color: #a3a3a3; }
+  input:-moz-placeholder {
+    color: #a3a3a3; }
 
 textarea {
   font-size: 17px;

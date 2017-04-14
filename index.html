@@ -8,8 +8,11 @@
 
   <script type="text/javascript" src="//fast.fonts.net/jsapi/9b03caba-f4bd-45ce-8703-9f04f862f577.js"></script>
 
-  <link rel="stylesheet" href="stylesheets/style.css">
+
+  <link rel="stylesheet" href="stylesheets/remodal.css">
+  <link rel="stylesheet" href="stylesheets/remodal-default-theme.css">
   <link rel="stylesheet" href="stylesheets/jquery-ui.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
 
   <script>
     function gen_mail_to_link(lhs,rhs,subject,text) {
@@ -128,8 +131,8 @@
     </ul>
 
     <section>
-      <h3>Contact me at:</h3>
-      <p><input type="text"></p>
+      <h3>Please Contact Me At:</h3>
+      <p><input type="text" placeholder="Email Address" id="email" /></p>
     </section>
 
     <section>
@@ -138,8 +141,19 @@
     </section>
 
     <section>
-      <p><button>Let's do this</button></p>
+      <p>
+        <input type="button" value="Submit" id="submitForm" />
+      </p>
     </section>
+
+    <div class="remodal" data-remodal-id="submit-blank">
+      <a data-remodal-action="close" class="remodal-close"></a>
+      <p>Please enter a valid email address!</p>
+      <br>
+      <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+    </div>
+
+    <p>We provide</p>
 
   </div>
 
@@ -149,6 +163,7 @@
 
   <script src="scripts/jquery-3.2.1.min.js"></script>
   <script src="scripts/jquery-ui.min.js"></script>
+  <script src="scripts/remodal.js"></script>
   <script src="scripts/main.js"></script>
 </body>
 </html>

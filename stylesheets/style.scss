@@ -132,12 +132,18 @@ a,
 a:visited {
   text-decoration: none;
   color: $gray-dark;
-  border-bottom: 1px solid $gray;
+
+  &[href] {
+    border-bottom: 1px solid $gray;
+  }
 
   &:hover,
   &:active {
     color: $gray;
-    border-bottom: 1px solid $gray-light;
+
+    &[href] {
+      border-bottom: 1px solid $gray-light;
+    }
   }
 }
 
@@ -346,6 +352,11 @@ input {
   color: $gray-darker;
   border: 1px solid $gray-lighter;
   padding: #{$small-spacing / 2} $small-spacing;
+
+  &::-webkit-input-placeholder { color: $gray-light; }
+  &::-moz-placeholder { color: $gray-light; }
+  &:-ms-input-placeholder { color: $gray-light; }
+  &:-moz-placeholder { color: $gray-light; }
 }
 
 textarea {

@@ -1,5 +1,11 @@
 $(function() {
 
+  // Check that it's an email address
+  function isEmail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+  }
+
   // Tooltips
   var tooltip1 = $('<div id="tooltip1" class="tooltip" />').css({
     position: 'absolute',
@@ -42,5 +48,17 @@ $(function() {
   $('#tooltip1').hide();
   $('#slider2 .ui-slider-handle').append(tooltip2);
   $('#tooltip2').text('50% / 50%');
+
+
+  // FORM
+  $('#submitForm').on('click', function(e) {
+    e.preventDefault();
+    var emailVal = $('#email').val();
+    if (emailVal !== '' && isEmail(emailVal) ) {
+      submitForm();
+    } else {
+      $('[data-remodal-id="submit-blank"]').remodal().open();
+    }
+  });
 
 });
