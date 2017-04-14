@@ -46,6 +46,12 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index.html",
+		"oF": 0
+		},
 	"\/README.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -163,6 +169,29 @@
 		"oAP": "\/stylesheets\/remodal-min.css",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/stylesheets\/style.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/stylesheets\/style-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/stylesheets\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/stylesheets\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"\/zohoverify\/verifyforzoho.html": {
 		"ft": 8192,
