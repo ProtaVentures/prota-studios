@@ -9,10 +9,77 @@
 	],
 "creatorBuild": "25813",
 "files": {
+	"\/android-chrome-192x192.png": {
+		"ft": 32768,
+		"iS": 1873,
+		"oA": 0,
+		"oAP": "\/android-chrome-192x192.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/android-chrome-512x512.png": {
+		"ft": 32768,
+		"iS": 5445,
+		"oA": 0,
+		"oAP": "\/android-chrome-512x512.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 1733,
+		"oA": 0,
+		"oAP": "\/apple-touch-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/browserconfig.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/browserconfig.xml",
+		"oF": 0
+		},
 	"\/CNAME": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/CNAME",
+		"oF": 0
+		},
+	"\/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 629,
+		"oA": 0,
+		"oAP": "\/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 923,
+		"oA": 0,
+		"oAP": "\/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/favicon.ico": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/favicon.ico",
 		"oF": 0
 		},
 	"\/images\/bg-header.png": {
@@ -52,6 +119,25 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
+	"\/manifest.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/manifest-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/mstile-150x150.png": {
+		"ft": 32768,
+		"iS": 2596,
+		"oA": 0,
+		"oAP": "\/mstile-150x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/README.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -75,6 +161,16 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"\/safari-pinned-tab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/safari-pinned-tab.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/scripts\/jquery-3.2.1.min.js": {
 		"ft": 64,
