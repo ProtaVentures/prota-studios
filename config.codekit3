@@ -15,6 +15,17 @@
 		"oAP": "\/CNAME",
 		"oF": 0
 		},
+	"\/images\/bg-header.png": {
+		"ft": 32768,
+		"iS": 491354,
+		"oA": 0,
+		"oAP": "\/images\/bg-header.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/images\/bg-header.svg": {
 		"ft": 2097152,
 		"miP": 0,
