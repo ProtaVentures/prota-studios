@@ -56,14 +56,17 @@ h1 {
 
 h2 {
   color: #303030;
-  font-size: 25px;
-  font-family: "Proxima N W01 Smbd", Helvetica, sans-serif;
+  font-size: 27px;
+  font-family: "Proxima N W01 Bold", Helvetica, sans-serif;
   text-align: center; }
+  @media only screen and (max-width: 700px) {
+    h2 {
+      font-size: 23px; } }
 
 h3 {
   color: #303030;
   font-size: 19px;
-  font-family: "Proxima N W01 Smbd", Helvetica, sans-serif;
+  font-family: "Proxima N W01 Bold", Helvetica, sans-serif;
   text-align: center; }
 
 p {
@@ -165,26 +168,11 @@ strong {
   -moz-osx-font-smoothing: grayscale;
   padding-left: 24px;
   padding-right: 24px; }
-  .site-container section {
-    margin: 90px auto;
-    max-width: 500px;
-    width: 100%; }
 
-footer {
-  display: block;
-  width: 100%;
-  max-width: 700px;
-  height: 50px;
-  margin: 0;
-  font-size: 13px;
-  text-align: center;
-  opacity: 0.65;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-  footer p {
-    font-size: 15px;
-    text-align: center;
-    margin: 15px auto; }
+section {
+  margin: 90px auto;
+  max-width: 500px;
+  width: 100%; }
 
 .slider-wrapper {
   position: relative; }
@@ -246,7 +234,7 @@ footer {
   width: 29px;
   height: 29px;
   border-radius: 50%;
-  background-color: dodgerblue;
+  background: linear-gradient(to bottom, #359bff, dodgerblue);
   border: none;
   box-shadow: 0 4px 10px rgba(22, 22, 22, 0.25);
   cursor: pointer; }
@@ -284,3 +272,36 @@ textarea {
   width: 100%;
   border: 1px solid #d6d6d6;
   padding: 5px 10px; }
+
+.section-services {
+  max-width: 1200px; }
+  .section-services ul {
+    list-style: none;
+    padding: 0;
+    columns: 3;
+    color: #636363; }
+    @media only screen and (max-width: 920px) {
+      .section-services ul {
+        columns: 2; } }
+    @media only screen and (max-width: 500px) {
+      .section-services ul {
+        columns: 1; } }
+    .section-services ul li {
+      text-align: center;
+      margin-bottom: 15px; }
+
+footer {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: 50px;
+  margin: 0;
+  font-size: 13px;
+  text-align: center;
+  opacity: 0.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  footer p {
+    font-size: 15px;
+    text-align: center;
+    margin: 15px auto; }

@@ -25,6 +25,7 @@ $gray-darker: mix($gray, $black, 25%);
 $color-primary: $gray;
 
 $action-color: dodgerblue;
+$hover-color: tint($action-color, 10%);
 
 // VARIABLES
 $base-border-radius: 7px;
@@ -62,7 +63,7 @@ $base-timing: ease-in;
 
   &:hover,
   &:focus {
-    background-color: tint($action-color, 10%);
+    background-color: $hover-color;
     color: #fff;
     transform: translateY(-10%);
     box-shadow: 0 8px 14px rgba($black, 0.15);
@@ -112,15 +113,19 @@ h1 {
 
 h2 {
   color: $gray-darker;
-  font-size: 25px;
-  font-family: $font-semibold;
+  font-size: 27px;
+  font-family: $font-bold;
   text-align: center;
+
+  @media only screen and (max-width: 700px) {
+    font-size: 23px;
+  }
 }
 
 h3 {
   color: $gray-darker;
   font-size: 19px;
-  font-family: $font-semibold;
+  font-family: $font-bold;
   text-align: center;
 }
 
@@ -253,31 +258,12 @@ strong {
 	-moz-osx-font-smoothing: grayscale;
   padding-left: $base-spacing;
   padding-right: $base-spacing;
-
-  section {
-    margin: 90px auto;
-    max-width: 500px;
-    width: 100%;
-  }
 }
 
-footer {
-  display: block;
+section {
+  margin: 90px auto;
+  max-width: 500px;
   width: 100%;
-  max-width: 700px;
-  height: 50px;
-  margin: 0;
-  font-size: 13px;
-  text-align: center;
-  opacity: 0.65;
-  -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-
-  p {
-    font-size: 15px;
-    text-align: center;
-    margin: 15px auto;
-  }
 }
 
 .slider-wrapper {
@@ -359,7 +345,7 @@ footer {
     width: 29px;
     height: 29px;
     border-radius: 50%;
-    background-color: $action-color;
+    background: linear-gradient(to bottom, $hover-color, $action-color);
     border: none;
     box-shadow: 0 4px 10px rgba($black, 0.25);
     cursor: pointer;
@@ -400,4 +386,47 @@ textarea {
   width: 100%;
   border: 1px solid $gray-lighter;
   padding: #{$small-spacing / 2} $small-spacing;
+}
+
+.section-services {
+  max-width: 1200px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    columns: 3;
+    color: $gray-dark;
+
+    @media only screen and (max-width: 920px) {
+      columns: 2;
+    }
+
+    @media only screen and (max-width: 500px) {
+      columns: 1;
+    }
+
+    li {
+      text-align: center;
+      margin-bottom: #{$small-spacing * 1.5};
+    }
+  }
+}
+
+footer {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: 50px;
+  margin: 0;
+  font-size: 13px;
+  text-align: center;
+  opacity: 0.65;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+  p {
+    font-size: 15px;
+    text-align: center;
+    margin: 15px auto;
+  }
 }
