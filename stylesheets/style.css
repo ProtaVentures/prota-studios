@@ -275,7 +275,7 @@ textarea {
 .section-services {
   position: relative;
   width: 100%;
-  background: linear-gradient(to bottom, #ededed, #b5b5b5);
+  background: #ebebeb;
   margin-top: 90px; }
   .section-services:before {
     z-index: -1;
@@ -285,7 +285,7 @@ textarea {
     width: 100%;
     height: 50px;
     top: -50px;
-    background: linear-gradient(to left bottom, whitesmoke 50%, #ededed 50%); }
+    background: linear-gradient(to left bottom, whitesmoke 50%, #ebebeb 50%); }
   .section-services .section-inner {
     margin: 110px auto 110px;
     max-width: 1200px;
@@ -317,7 +317,7 @@ footer {
   font-size: 13px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #b5b5b5;
+  background: #ebebeb;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
   footer .footer-inner {
