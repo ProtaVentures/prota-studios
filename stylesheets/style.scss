@@ -59,14 +59,14 @@ $base-timing: ease-in;
   vertical-align: middle;
   white-space: nowrap;
   text-transform: uppercase;
-  box-shadow: 0 4px 8px rgba($black, 0.3);
+  // box-shadow: 0 4px 8px rgba($black, 0.3);
 
   &:hover,
   &:focus {
     background-color: $hover-color;
     color: #fff;
     transform: translateY(-10%);
-    box-shadow: 0 8px 14px rgba($black, 0.15);
+    box-shadow: 0 8px 14px 1px rgba($black, 0.15);
   }
 
   &:disabled {
