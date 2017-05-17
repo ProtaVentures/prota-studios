@@ -11,6 +11,8 @@ $(function() {
     position: 'absolute',
   }).show();
 
+  var slider2Result = $('#slider2Result');
+
   // Slider 1
   $('#slider1').slider({
     value: 50,
@@ -28,17 +30,18 @@ $(function() {
     max: 100,
     step: 5,
     slide: function(event, ui ) {
-      var num1 = ui.value < 100 ? (100 - ui.value) + "%" : '';
-      var num2 = ui.value > 0 ? ui.value + "%" : '';
-      var divider = ui.value < 100 && ui.value > 0 ? ' / ' : '';
+      var num1 = ui.value < 100 ? (100 - ui.value) + "% cash" : '';
+      var num2 = ui.value > 0 ? ui.value + "% equity" : '';
+      var divider = ui.value < 100 && ui.value > 0 ? ', ' : '';
 
-      tooltip.text(num1 + divider + num2 );
+      // tooltip.text(num1 + divider + num2 );
+      slider2Result.text(num1 + divider + num2 );
     },
     change: function(event, ui) {}
   });
 
-  $('#slider2 .ui-slider-handle').append(tooltip);
-  $('#tooltip').text('50% / 50%');
+  // $('#slider2 .ui-slider-handle').append(tooltip);
+  $('#slider2Result').text('50% cash, 50% equity');
 
 
   // FORM
